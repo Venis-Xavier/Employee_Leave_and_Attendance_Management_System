@@ -1,0 +1,45 @@
+.leave-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+select, input, button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.leave-table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.leave-table th, .leave-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.leave-table th {
+  background-color: #007BFF;
+  color: white;
+}
+

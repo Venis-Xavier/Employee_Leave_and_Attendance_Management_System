@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #edf2f8;
+  }
+  
+  /* ✅ Employee and Manager dashboard containers */
+  .employee-dashboard-container {
+    background-color: #edf2f8; /* Employee-specific background */
+  }
+  
+  .manager-dashboard-container {
+    background-color: #f4f6fc; /* Manager-specific background */
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* ✅ Adjust header colors based on roles */
+  .employee-dashboard-container .dashboard-header {
+    background-color: #2f3e9e; /* Employee Header */
+  }
+  
+  .manager-dashboard-container .dashboard-header {
+    background-color: #1f2e80; /* Manager Header */
+  }
+  
+  .dashboard-header {
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* ✅ Manager-specific navigation */
+  .manager-nav {
+    background-color: #4054b2;
+    padding: 15px;
+  }
+  
+  .manager-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manager-nav li {
+    padding: 15px 25px;
+    color: #f0f4ff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .manager-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .manager-nav a:hover {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .manager-nav li:hover {
+    background-color: #2f3e9e;
+  }
+  
+  /* ✅ Standard navigation */
+  .dashboard-nav {
+    background-color: #4054b2;
+  }
+  
+  .dashboard-nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .dashboard-nav a:hover {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .dashboard-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dashboard-nav li {
+    padding: 15px 30px; /* Increased padding */
+  font-size: 18px;
+    color: #f0f4ff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-nav li:hover {
+    background-color: #2f3e9e;
+  }
+  
+  .dashboard-main-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  
+  .center-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    max-width: 800px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* ✅ Distinct manager styling */
+  .manager-dashboard-container .center-boxes {
+    background-color: #f0f4ff;
+  }
+  
+  .clock-box {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    background-color: #e4f3fc;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .clock-box h3 {
+    margin-bottom: 20px;
+    color: #2f3e9e;
+    font-size: 22px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  input[type="time"], input[type="date"] {
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    width: 200px;
+  }
+  
+  button {
+    padding: 12px 18px;
+    font-size: 16px;
+    background-color: #2f3e9e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* ✅ Sidebar specific styling */
+  .side-info-bar {
+    width: 220px;
+    background-color: #f7f9fc;
+    border-left: 8px solid #2f3e9e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* ✅ Managers get distinct sidebar styling */
+  .manager-dashboard-container .side-info-bar {
+    border-left: 8px solid #1f2e80;
+    background-color: #e9eef9;
+  }
+  
+  .info-item {
+    margin-bottom: 10px;
+  }
+  
+  .info-item h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+    color: #2f3e9e;
+  }
+  
+  .info-item p {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  /* ✅ Adjust manager text color */
+  .manager-dashboard-container .info-item h4 {
+    color: #1f2e80;
+  }
+  

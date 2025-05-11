@@ -1,0 +1,24 @@
+.leave-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.filter-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px;
+  background-color: #8884d8;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #685bdb;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+}

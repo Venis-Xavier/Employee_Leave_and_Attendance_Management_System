@@ -1,0 +1,63 @@
+.shift-status-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shift-status-container h2 {
+    text-align: center;
+    color: #2f3e9e;
+    margin-bottom: 20px;
+  }
+  
+  .shift-status-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .shift-status-container th,
+  .shift-status-container td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .status {
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 12px;
+    display: inline-block;
+  }
+  
+  .status.pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .status.approved {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status.rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+    background-color: #2f3e9e;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    background-color: #1f2e80;
+  }
